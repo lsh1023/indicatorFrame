@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".find.finditem.hideleg.HideLegActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/sv_content"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#dddddd"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:queryHint="">
+        </SearchView>
+
+        <TextView
+            android:onClick="search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="搜索"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rb_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/rb_message"
+                style="@style/rb_find_style"
+                android:text="资讯"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_post"
+                style="@style/rb_find_style"
+                android:text="帖子" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/ll_search_title"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+</LinearLayout>

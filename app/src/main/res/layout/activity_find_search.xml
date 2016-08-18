@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".find.FindSearchActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#dddddd"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:queryHint="搜索健康咨询或帖子">
+        </SearchView>
+
+        <TextView
+            android:onClick="subsearch"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#dddddd"
+            android:text="搜索"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/ll_search_title"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FitTimer都在搜"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/view"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_colum1"
+        android:layout_below="@+id/tv_search_title"
+        android:layout_width="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="item1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="廋腿"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:onClick="item2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="减脂"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:onClick="item3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="拉伸"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:onClick="item4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="小腿"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_colum2"
+        android:layout_below="@+id/ll_item_colum1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="减肥"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="腹肌"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="跑步"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="瑜伽"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_colum3"
+        android:layout_below="@+id/ll_item_colum2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="hiit"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="廋腹"
+            android:textColor="#000000"
+            android:background="@drawable/search_item_bg"/>
+    </LinearLayout>
+</RelativeLayout>

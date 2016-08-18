@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="search"
+            android:layout_margin="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/search_icon_hint"/>
+
+        <RadioGroup
+            android:id="@+id/rd_activity"
+            android:layout_centerInParent="true"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/find_item_bg">
+            <RadioButton
+                android:id="@+id/rb_featured"
+                android:text="精选"
+                style="@style/rb_find_style_bg"
+
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_forum"
+                style="@style/rb_find_style_bg"
+                android:text="论坛" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_outer_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+</LinearLayout>
